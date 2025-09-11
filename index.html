@@ -3,36 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Hariom Chamoli | Portfolio</title>
   <style>
+    /* General Styles */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background: #f4f4f9;
       color: #333;
+      line-height: 1.6;
     }
-    header {
+
+    /* Navbar */
+    nav {
       background: #222;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff9800;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #222, #444);
       color: white;
-      padding: 20px;
+      padding: 60px 20px;
       text-align: center;
     }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    /* Sections */
     section {
       padding: 40px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
-    h1, h2 {
+    h2 {
       color: #444;
+      border-left: 5px solid #ff9800;
+      padding-left: 10px;
+      margin-bottom: 15px;
     }
+
+    /* Cards */
     .card {
       background: white;
-      padding: 20px;
+      padding: 25px;
       margin: 20px 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
     }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Links */
+    a {
+      color: #ff9800;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
     footer {
       text-align: center;
       padding: 20px;
@@ -43,42 +103,68 @@
   </style>
 </head>
 <body>
+  <!-- Navbar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Header -->
   <header>
-    <h1>Hi, I'm [Hariom Chamoli]</h1>
-    <p>B.Tech Student | Aspiring Engineer</p>
+    <h1>Hi, I'm Hariom Chamoli</h1>
+    <p>B.Tech Computer Science Student | Aspiring Software Engineer</p>
   </header>
 
-  <section>
+  <!-- About Section -->
+  <section id="about">
     <div class="card">
       <h2>About Me</h2>
-      <p>I am a B.Tech student specializing in Computer Science. I am passionate about coding, problem-solving, and building real-world projects. My interests include web development, data structures & algorithms, and exploring new technologies.</p>
+      <p>
+        I am a B.Tech student specializing in Computer Science. I am passionate about coding, 
+        problem-solving, and building real-world projects. My interests include web development, 
+        data structures & algorithms, and exploring new technologies to improve my skills.
+      </p>
     </div>
+  </section>
 
+  <!-- Projects Section -->
+  <section id="projects">
     <div class="card">
       <h2>Projects</h2>
       <ul>
-        <li><b>Library Management System</b> – C++ OOP-based project</li>
-        <li><b>Weather App</b> – Simple Python project using API</li>
-        <li><b>Portfolio Website</b> – This website hosted on GitHub Pages</li>
+        <li><b>Library Management System</b> – A C++ OOP-based project for managing books and users.</li>
+        <li><b>Weather App</b> – Python project using API to fetch and display live weather updates.</li>
+        <li><b>Portfolio Website</b> – This website, built with HTML & CSS and hosted on GitHub Pages.</li>
       </ul>
     </div>
+  </section>
 
+  <!-- Skills Section -->
+  <section id="skills">
     <div class="card">
       <h2>Skills</h2>
-      <p>C++, Java, Python, HTML, CSS, Git, Problem-Solving</p>
+      <p>
+        C++, Java, Python, HTML, CSS, Git, GitHub, Data Structures & Algorithms, Problem-Solving
+      </p>
     </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section id="contact">
     <div class="card">
       <h2>Contact</h2>
-      <p>Email: hchamoli11@gmail.com</p>
+      <p>Email: <a href="mailto:hchamoli11@gmail.com">hchamoli11@gmail.com</a></p>
       <p>LinkedIn: <a href="https://www.linkedin.com/in/hariom-chamoli-44747934b" target="_blank">linkedin.com/in/hariom-chamoli-44747934b</a></p>
       <p>GitHub: <a href="https://github.com/hariomchamoli" target="_blank">github.com/hariomchamoli</a></p>
       <p>LeetCode: <a href="https://leetcode.com/u/HariomChamoli/" target="_blank">leetcode.com/u/HariomChamoli/</a></p>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 [Hariom Chamoli]. All Rights Reserved.</p>
+    <p>© 2025 Hariom Chamoli. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
