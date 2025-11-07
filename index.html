@@ -5,12 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hariom Chamoli | Portfolio</title>
   <style>
-    /* Reset & Basics */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: "Segoe UI", Arial, sans-serif;
       background: linear-gradient(135deg, #1a1a2e, #16213e);
@@ -18,119 +13,51 @@
       line-height: 1.6;
       scroll-behavior: smooth;
     }
-
-    /* Navbar */
     nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
+      position: fixed; top: 0; left: 0; width: 100%;
       background: rgba(0, 0, 0, 0.7);
-      padding: 15px 20px;
-      text-align: center;
-      z-index: 1000;
+      padding: 15px 20px; text-align: center; z-index: 1000;
       backdrop-filter: blur(6px);
     }
     nav a {
-      color: #eee;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
+      color: #eee; margin: 0 20px; text-decoration: none;
+      font-weight: bold; transition: color 0.3s;
     }
-    nav a:hover {
-      color: #ff9800;
-    }
-
-    /* Hero Section */
+    nav a:hover { color: #ff9800; }
     .hero {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      height: 100vh; display: flex; flex-direction: column;
+      justify-content: center; align-items: center; text-align: center;
       background: linear-gradient(135deg, rgba(26,26,46,0.8), rgba(22,33,62,0.8)),
                   url("https://source.unsplash.com/1600x900/?technology,code") no-repeat center/cover;
-      color: #fff;
-      animation: fadeIn 2s ease-in;
+      color: #fff; animation: fadeIn 2s ease-in;
     }
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-    .hero p {
-      font-size: 1.3rem;
-      margin-bottom: 20px;
-    }
+    .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.3rem; margin-bottom: 20px; }
     .btn {
-      display: inline-block;
-      padding: 12px 25px;
-      background: #ff9800;
-      color: #fff;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: bold;
+      display: inline-block; padding: 12px 25px;
+      background: #ff9800; color: #fff; border-radius: 30px;
+      text-decoration: none; font-weight: bold;
       transition: background 0.3s;
     }
-    .btn:hover {
-      background: #e68900;
-    }
-
-    /* Sections */
-    section {
-      padding: 80px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      font-size: 2rem;
-      color: #ff9800;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    /* Cards */
+    .btn:hover { background: #e68900; }
+    section { padding: 80px 20px; max-width: 1000px; margin: auto; }
+    h2 { font-size: 2rem; color: #ff9800; margin-bottom: 20px; text-align: center; }
     .card {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 25px;
-      margin: 20px 0;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      background: rgba(255, 255, 255, 0.05); padding: 25px; margin: 20px 0;
+      border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.4);
       transition: transform 0.3s, box-shadow 0.3s;
     }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.6);
-    }
-    ul {
-      padding-left: 20px;
-    }
-    a {
-      color: #ff9800;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Footer */
+    .card:hover { transform: translateY(-5px); box-shadow: 0 5px 15px rgba(0,0,0,0.6); }
+    a { color: #ff9800; text-decoration: none; }
+    a:hover { text-decoration: underline; }
     footer {
-      text-align: center;
-      padding: 20px;
-      background: rgba(0,0,0,0.8);
-      color: #ccc;
+      text-align: center; padding: 20px;
+      background: rgba(0,0,0,0.8); color: #ccc;
     }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
   </style>
 </head>
 <body>
-  <!-- Navbar -->
   <nav>
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -140,14 +67,12 @@
     <a href="#pese">E-Portfolio</a>
   </nav>
 
-  <!-- Hero / Home -->
   <section class="hero" id="home">
     <h1>Hi, I'm Hariom Chamoli</h1>
     <p>B.Tech Computer Science Student | Aspiring Software Engineer</p>
     <a href="#about" class="btn">Explore My Work</a>
   </section>
 
-  <!-- About Section -->
   <section id="about">
     <h2>About Me</h2>
     <div class="card">
@@ -159,7 +84,6 @@
     </div>
   </section>
 
-  <!-- Projects Section -->
   <section id="projects">
     <h2>Projects</h2>
     <div class="card">
@@ -171,17 +95,13 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
   <section id="skills">
     <h2>Skills</h2>
     <div class="card">
-      <p>
-        C++, Python, HTML, CSS, GitHub, Data Structures & Algorithms, Problem-Solving
-      </p>
+      <p>C++, Python, HTML, CSS, GitHub, Data Structures & Algorithms, Problem-Solving</p>
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
     <div class="card">
@@ -201,19 +121,16 @@
 
     <div class="card">
       <h3>1️⃣ 50 Learnings from Labs</h3>
-      <p>Reflections and lessons learned during PESE sessions.</p>
       <a href="PESE/50_Learnings_PESE.pdf" target="_blank">📄 View / Download PDF</a>
     </div>
 
     <div class="card">
       <h3>2️⃣ Handwritten Assignment</h3>
-      <p>Do’s & Don’ts of presentation and importance of audience analysis.</p>
       <a href="PESE/Assignment_5_DosAndDonts.pdf" target="_blank">📝 View / Download PDF</a>
     </div>
 
     <div class="card">
       <h3>3️⃣ Self-Introduction Video</h3>
-      <p>My one-minute self-introduction in formal attire.</p>
       <video width="400" height="240" controls>
         <source src="PESE/Self_Intro_Video.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -223,23 +140,26 @@
     <div class="card">
       <h3>4️⃣ Group Presentation</h3>
       <p>Our group PowerPoint presentation prepared for PESE.</p>
-      <!-- ✅ Fixed Embedded PPT Viewer -->
+      <!-- ✅ Corrected working embed -->
       <iframe 
-        src="https://view.officeapps.live.com/op/embed.aspx?src=https://raw.githubusercontent.com/hariomchamoli/hariomchamoli.github.io/main/PESE/group%203%20pese.pptx" 
+        src="https://view.officeapps.live.com/op/embed.aspx?src=https://raw.githubusercontent.com/hariomchamoli/hariomchamoli.github.io/main/PESE/group%203%20pese.pptx"
         width="100%" 
         height="500px" 
         frameborder="0">
       </iframe>
+      <p style="text-align:center; margin-top:10px;">
+        <a href="https://github.com/hariomchamoli/hariomchamoli.github.io/raw/main/PESE/group%203%20pese.pptx" target="_blank">
+          💾 Download PowerPoint
+        </a>
+      </p>
     </div>
 
     <div class="card">
       <h3>5️⃣ LinkedIn Profile</h3>
-      <p>My professional profile showcasing skills and certifications.</p>
       <a href="https://www.linkedin.com/in/hariom-chamoli-44747934b" target="_blank">🔗 Visit My LinkedIn</a>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2025 Hariom Chamoli. All Rights Reserved.</p>
   </footer>
